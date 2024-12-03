@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <style>
+@keyframes appear{
+   from{
+      opacity:0;
+      transform:translateX(-100px);
+   }
+to{ opacity:1;
+    transform:translateX(0px);
+
+}
+
+}
+.block{
+   animation: appear 5s linear;
+   animation-timeline: view();
+   animation-range:0 cover 40%;
+}
+
+</style> 
+
+
+   
+
+
+
+
+
+<div class="view">
+  <div class="container">
+   <div class="block" id="box"><h3>Nume si prenume: Timis Amadeus</h3>
+    <h3>Date @contact:</h3>
+    <p>Numar telefon: 0746634941</p>
+    <p>e-mail: amadeus.timis.39@gmail.com</p>
+   </div>
+   <div class="block" id="box">
+   <h2>Componente si caracteristici</h2>
+    <table>
+       <tr>
+        <th>Denumire</th>
+        <th>Producator</th>
+        <th>Parametrii</th>
+        </tr>
+        <tr>
+           <td>AMD Ryzen 7 4800H</td>
+           <td>AMD</td>
+           <td class="parametrii">Numar nuclee: 8, frecventa: 2.9 ghz, 16 thread-uri</td>
+        </tr>
+       
+        
+         <tr>
+           <td>nVidia GeForce GTX 1650 Ti</td>
+           <td>nVidia</td>
+           <td class="parametrii">Memorie maxima: 4GB, Tip memorie: GDDR6</td>
+         </tr>
+        
+
+    </table>
+    
+   </div>
+</div>
+   
+   <div class="block" id="third"> 
+      <h3>Structura retelei: </h3> 
+    <div><img src="Untitled Workspace.PNG"></div>
+</div>
+<div class="block" id="fourth">
+    <h3>Caracteristiti conexiune retea</h3>
+    <ul>
+       <li>IPV4: 192.168.1.128</li>
+       <li>Gateway: 192.168.1.1</li>
+       <li>Subnet Mask: 255.255.255.0</li>
+
+    </ul>
+    </div>
+    <div class="block" id="fifth">
+    <h3>Monitorizare resurse:</h3>
+   <div class="slider">
+    <div class="slides">
+      <img class="slide" src="CPU.png" alt="img1">
+      <img class="slide" src="GPU.png" alt="img2">
+      <img class="slide" src="Wi-Fi.png" alt="img3">
+      <img class="slide" src="Memorie.png"alt="img4"></div>
+     <button class="prev" onclick="prevSlide()">&#10094</button>
+     <button class="next" onclick="nextSlide()">&#10095</button>
+  </div>
+  </div>
+
+<script src="code.js"></script>
+
+</body>
+</html>

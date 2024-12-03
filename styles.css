@@ -1,0 +1,117 @@
+body {
+  background-color: #6b9080;
+  font-family: Verdana;
+  margin-top:0;
+  margin-left:0;
+}
+
+td, th {
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2, h3, p, li {
+  font-family: sans-serif;
+  color: #2b2d2b;
+}
+
+
+img {
+  width: 70%;
+  height: auto;
+}
+
+
+.slides img {
+  display: inline-block;
+  cursor: pointer;
+  width: 45%;
+  margin: 10px; 
+}
+
+
+.slides img.hidden {
+  display: none;
+}
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+img.displaySlide {
+  display: block;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+
+.slides {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+.block {
+
+border-radius:10px;
+background-color:#a4c3b2;
+
+
+}
+
+#box{
+width:45%;
+
+}
+
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+#third{
+
+  text-align:center;
+}
+
+#fourth{
+
+  width:19%;
+
+}
